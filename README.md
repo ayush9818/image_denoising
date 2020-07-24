@@ -1,5 +1,5 @@
 # pytorch-Learning-to-See-in-the-Dark
-Learning to See in the Dark using pytorch 0.4.0
+Learning to See in the Dark using Pytorch 0.4.0
 
 ### Original tensorflow version
 Chen Chen, Qifeng Chen, Jia Xu, and Vladlen Koltun, "Learning to See in the Dark", in CVPR, 2018. <br/>
@@ -22,7 +22,7 @@ Download `download_dataset.py` from the [original code](https://github.com/cchen
 
 ## Training
 `python train_Sony.py`
-- It will save model and generate result images every 100 epochs. 
+- It will save model and generate result images every 100 epochs.
 - The trained models will be saved in `saved_model/` and the result images will be saved in `result_Sony/`.
 - The result of the current output is displayed on the right side of the image file with the ground truth counter part shown on the left side.
 
@@ -34,7 +34,7 @@ You can download the trained pytorch model [here](https://drive.google.com/file/
 
 - The trained model is only for `.ARW` photos taken by Sony cameras.
 - Pytorch somehow needs more GPU resources than Tensorflow. Therefore, it is impossible to take in the whole image.
-- Testing will only take 1024 * 1024 pixels from the test images. 
+- Testing will only take 1024 * 1024 pixels from the test images.
 - This testing script is only for checking the performance of the trained model.
 - The result will be saved in `test_result_Sony` with `gt` as ground truth images, `scale` as scaled images, `ori` as input images, and `out` as output images.
 
